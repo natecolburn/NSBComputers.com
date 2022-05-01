@@ -1,0 +1,1207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+background: #e7e7e7;
+}
+
+.red {
+  color:#CC3333;
+}
+
+
+.section-title{
+  font-size: 25px;
+}
+.section-title {
+  font-style: 4rem;
+  font-weight: 200;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  text-align: center;
+}
+
+
+/* start header */
+#header {
+
+  background-color: #151515;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#header .left-logo{
+
+padding-left: 10px;
+
+}
+
+
+#header #top-logo {
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+#business-logo {
+  width: 80px;
+}
+
+
+
+.mediaLinks ul li {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  /* transition: all 0.2s ease; */
+  font-size: 20px;
+  padding: 5px;
+    padding-right: 10px;
+}
+
+
+
+.mediaLinks ul li a {
+  color: white;
+
+}
+
+.fa-facebook:hover {
+  color: #CC3333;
+}
+
+.fa-yelp:hover {
+  color: #CC3333;
+}
+
+/* End header  */
+
+
+
+/* Hero section*/
+#hero {
+  background-image: url(../img/Computer_repair_1.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+
+#hero .hero {
+  color: black;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .7;
+  z-index: -1;
+}
+
+#hero .hero {
+
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+
+#hero h1 {
+  display: block;
+  width: fit-content;
+  font-size: 28px;
+  position: relative;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 1s;
+}
+
+#hero p {
+  display: block;
+  width: fit-content;
+  font-size:18px;
+  position: relative;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 2s;
+}
+
+#hero h2 {
+  display: block;
+  width: fit-content;
+  font-size: 25px;
+  position: relative;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 3s;
+}
+
+#hero ul li {
+  display: block;
+  width: fit-content;
+  font-size:15px;
+  position: relative;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 3s;
+}
+#hero ul li a{
+  display: block;
+  width: fit-content;
+  font-size:15px;
+  position: relative;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 3s;
+}
+
+#hero h1 .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: text_reveal_box 1s ease;
+  animation-delay: .5s;
+}
+
+#hero p .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 1.5s;
+}
+
+#hero h2 .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 2.5s;
+}
+
+#hero li .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 2.5s;
+}
+
+/* hours  */
+.hours ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.hours li {
+  list-style: none;
+}
+
+.hours li {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  display: block;
+}
+
+/* End hours */
+/* Start phone */
+.phone ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.phone li ,a{
+  list-style: none;
+
+}
+
+.phone li ,a{
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  display: block;
+
+}
+
+
+
+/* End Phone */
+/* End hero section*/
+
+
+
+/* Services section  */
+
+#services .services {
+
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+
+#services .box {
+  background: #ccc;
+   padding: 10px;
+   margin: 10px;
+   height: 150px;
+   display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 10px;
+  background-size: cover;
+
+}
+
+#services .box h2{
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px #444;
+  margin-top: 10px;
+}
+
+#services .icon img{
+  width: 35px;
+}
+
+#services .box1 {
+  background-image: url('../img/Computer_repair_3.jpg');
+
+
+}
+#services .box2 {
+  background-image: url('../img/Computer_Virus.jpg');
+
+}
+
+#services .box3 {
+  background-image: url('../img/Data_Backup.jpg');
+
+}
+
+#services .box4 {
+  background-image: url('../img/Computer_Printer_2.jpg');
+
+}
+
+#services .box5 {
+  background-image: url('../img/Computer.jpg');
+
+}
+
+#services .box6 {
+  background-image: url('../img/business.jpg');
+
+}
+
+#services .box1, #services .box2,
+#services .box3, #services .box4,
+#services .box5, #services .box6 {
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+
+  flex-direction: column;
+  border-radius: 10px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+}
+
+#services .box1::after, #services .box2::after,
+#services .box3::after, #services .box4::after,
+#services .box5::after, #services .box6::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c, #485563 100%);
+  opacity: .8;
+  z-index: -1;
+}
+
+
+/* End Services section  */
+
+
+/* About Section */
+#about {
+  text-align: center;
+background-color: none;
+
+
+}
+#about .about{
+padding: 10px;
+margin: 10px;
+border: solid 2px black;
+border-radius: 10px;
+background-color: white;
+}
+
+
+
+#about p{
+  color: black;
+  font-size: 15px;
+  margin-top: 5px;
+  line-height: 1.8rem;
+  font-weight: 300;
+  letter-spacing: .03rem;
+}
+
+/* End About Section */
+
+/* visit us section */
+
+#visit-us{
+  justify-content: center;
+
+
+}
+
+#visit-us .visit-us{
+padding: 10px;
+margin: auto;
+border: solid 2px black;
+background-color: white;
+border-radius: 10px;
+margin-left: 10px;
+margin-right: 10px;
+
+}
+
+iframe {
+    display:block;
+    width:100%;
+    height: 100%;
+}
+/* Create two equal columns that floats next to each other */
+#visit-us .column {
+  padding: 10px;
+
+
+}
+
+/* Clear floats after the columns */
+#visit-us:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#visit-us .col-left {
+  height: 250px;
+
+
+}
+
+#visit-us .col-right{
+
+
+}
+
+/* End Visit us section */
+
+
+
+/* remote-rescue Section */
+#remote-rescue{
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#remote-rescue .remote-rescue{
+text-align: center;
+margin: 0 auto;
+width: 90%;
+
+}
+
+#remote-rescue .rescue-info{
+margin: 0 auto;
+width: 90%;
+
+}
+/* End remote-rescue  section*/
+
+
+/* Footer section */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #151515;
+
+
+}
+
+footer p{
+  color: white;
+  font-size: 1.5vh;
+}
+/* End Footer Section */
+
+
+
+
+
+
+
+
+
+/* media =============================================================================================================== */
+
+
+@media  (min-width: 1201px){
+
+  .section-title{
+    font-size: 35px;
+  }
+
+  /* start header */
+
+  #header #top-logo {
+    font-size: 20px;
+  }
+
+  #business-logo {
+    width: 90px;
+  }
+
+  .mediaLinks ul li {
+    font-size: 25px;
+  }
+  /* End header  */
+
+  /* Hero section*/
+  #hero .hero{
+    width: 1200px;
+  }
+  #hero h1 {
+    font-size: 50px;
+  }
+
+  #hero p {
+    font-size:40px;
+  }
+
+  #hero h2 {
+    font-size: 45px;
+  }
+
+  #hero ul li {
+    font-size:35px;
+  }
+  #hero ul li a{
+    font-size:35px;
+  }
+  /* End hero section*/
+
+  /* Services section  */
+
+  #services {
+        width: 1200px;
+        margin: auto auto;
+    }
+
+  #services .grid-container{
+      display: flex;
+    }
+
+    #services .box {
+      flex-basis: 100%;
+      height: 230px;
+    }
+
+    #services .box .icon img{
+      width: 50px;
+    }
+
+    #services .box h2{
+      padding-top: 20px;
+      font-size: 25px;
+    }
+  /* End Services section  */
+
+  /* About Section */
+
+  #about{
+    width: 1201px;
+    margin: auto ;
+  }
+  #about p{
+    font-size: 23px;
+  }
+  /* End About Section */
+
+
+  /* visit us section */
+  #visit-us{
+    width: 1201px;
+    margin: auto;
+  }
+  #visit-us .column{
+    margin: auto;
+
+  }
+  #visit-us .visit-us{
+    display: flex;
+
+  }
+
+
+  #visit-us .col-left {
+    height: 400px;
+    width: 50%;
+  }
+
+  #visit-us p {
+    font-size: 20px;
+  }
+
+  #visit-us .hours {
+    font-size: 20px;
+  }
+
+  /* End Visit us section */
+
+  /* remote-rescue Section */
+
+  #remote-rescue{
+    width: 1201px;
+  }
+
+  #remote-rescue .remote-rescue{
+  width: 90%;
+  }
+
+  #remote-rescue .rescue-info{
+
+  width: 90%;
+  }
+
+  #remote-rescue p{
+  font-size: 20px
+  }
+
+  #remote-rescue .remote-rescue span{
+  font-size: 20px
+  }
+
+  #remote-rescue input{
+  font-size: 15px
+  }
+  /* End remote-rescue  ection*/
+}
+
+
+
+@media  (min-width: 912px) and (max-width: 1200px){
+
+    .section-title{
+      font-size: 30px;
+    }
+
+    /* start header */
+
+    #header #top-logo {
+      font-size: 20px;
+    }
+
+    #business-logo {
+      width: 90px;
+    }
+
+    .mediaLinks ul li {
+      font-size: 25px;
+    }
+    /* End header  */
+
+    /* Hero section*/
+    #hero h1 {
+      font-size: 55px;
+    }
+
+    #hero p {
+      font-size:38px;
+    }
+
+    #hero h2 {
+      font-size: 40px;
+    }
+
+    #hero ul li {
+      font-size:30px;
+    }
+    #hero ul li a{
+      font-size:30px;
+    }
+    /* End hero section*/
+    /* Services section  */
+
+    #services .grid-container{
+        display: flex;
+      }
+
+      #services .box {
+        flex-basis: 100%;
+        height: 230px;
+      }
+
+      #services .box .icon img{
+        width: 50px;
+      }
+
+      #services .box h2{
+        padding-top: 20px;
+        font-size: 25px;
+      }
+    /* End Services section  */
+
+    /* About Section */
+    #about p{
+      font-size: 23px;
+    }
+    /* End About Section */
+
+
+    /* visit us section */
+
+    #visit-us .column{
+      margin: auto;
+
+    }
+    #visit-us .visit-us{
+      display: flex;
+
+    }
+
+    #visit-us .col-left {
+      height: 400px;
+      width: 50%;
+    }
+
+
+    #visit-us h2 {
+      font-size: 30px;
+    }
+
+    #visit-us p {
+      font-size: 20px;
+    }
+
+    #visit-us .hours {
+      font-size: 20px;
+    }
+
+    /* End Visit us section */
+
+
+    /* remote-rescue Section */
+
+    #remote-rescue .remote-rescue{
+    width: 90%;
+    }
+
+    #remote-rescue .rescue-info{
+
+    width: 90%;
+    }
+
+    #remote-rescue p{
+    font-size: 20px
+    }
+
+    #remote-rescue .remote-rescue span{
+    font-size: 20px
+    }
+
+    #remote-rescue input{
+    font-size: 15px
+    }
+    /* End remote-rescue  ection*/
+}
+
+
+
+
+@media  (min-width: 820px) and (max-width: 911px){
+
+  .section-title{
+    font-size: 30px;
+  }
+
+  /* start header */
+
+  #header #top-logo {
+    font-size: 20px;
+  }
+
+  #business-logo {
+    width: 90px;
+  }
+
+  .mediaLinks ul li {
+    font-size: 25px;
+  }
+  /* End header  */
+
+  /* Hero section*/
+  #hero h1 {
+    font-size: 40px;
+  }
+
+  #hero p {
+    font-size:30px;
+  }
+
+  #hero h2 {
+    font-size: 35px;
+  }
+
+  #hero ul li {
+    font-size:25px;
+  }
+
+  #hero ul li a{
+    font-size:25px;
+  }
+  /* End hero section*/
+  /* Services section  */
+
+  #services .grid-container{
+      display: flex;
+    }
+
+    #services .box {
+      flex-basis: 100%;
+      height: 230px;
+    }
+
+    #services .box .icon img{
+      width: 45px;
+    }
+
+    #services .box h2{
+      padding-top: 20px;
+      font-size: 25px;
+    }
+  /* End Services section  */
+
+  /* About Section */
+  #about p{
+    font-size: 23px;
+  }
+  /* End About Section */
+
+
+  /* visit us section */
+
+  #visit-us .column{
+    margin: auto;
+
+  }
+  #visit-us .visit-us{
+    display: flex;
+
+  }
+
+  #visit-us .col-left {
+    height: 400px;
+    width: 50%;
+  }
+
+
+  #visit-us h2 {
+    font-size: 30px;
+  }
+
+  #visit-us p {
+    font-size: 20px;
+  }
+
+  #visit-us .hours {
+    font-size: 20px;
+  }
+
+  /* End Visit us section */
+
+
+  /* remote-rescue Section */
+
+  #remote-rescue .remote-rescue{
+  width: 90%;
+  }
+
+  #remote-rescue .rescue-info{
+
+  width: 90%;
+  }
+
+  #remote-rescue p{
+  font-size: 20px
+  }
+
+  #remote-rescue .remote-rescue span{
+  font-size: 20px
+  }
+
+  #remote-rescue input{
+  font-size: 15px
+  }
+  /* End remote-rescue  ection*/
+}
+
+
+
+@media  (min-width: 500px) and (max-width: 819px){
+  /* start header */
+
+  #header #top-logo {
+    font-size: 18px;
+  }
+
+  #business-logo {
+    width: 85px;
+  }
+
+  .mediaLinks ul li {
+    font-size: 22px;
+  }
+  /* End header  */
+
+
+  /* Hero section*/
+  #hero h1 {
+    font-size: 35px;
+  }
+
+  #hero p {
+    font-size:25px;
+  }
+
+  #hero h2 {
+    font-size: 30px;
+  }
+
+  #hero ul li {
+    font-size:20px;
+  }
+  #hero ul li a{
+    font-size:20px;
+  }
+  /* End hero section*/
+
+  /* Services section  */
+
+  #services .grid-container{
+      display: flex;
+    }
+
+    #services .box {
+      flex-basis: 100%;
+      height: 135px;
+    }
+
+    #services .box .icon img{
+      width: 30px;
+    }
+
+    #services .box h2{
+      font-size: 18px;
+    }
+  /* End Services section  */
+
+  /* About Section */
+  #about .about{
+
+  }
+  #about p{
+    font-size: 20px;
+  }
+  /* End About Section */
+
+
+  /* visit us section */
+
+  #visit-us .column{
+    margin: auto;
+
+  }
+  #visit-us .visit-us{
+    display: flex;
+
+  }
+
+  /* Create two equal columns that floats next to each other */
+  #visit-us .column {
+    padding: 10px;
+  }
+  #visit-us .col-left {
+    height: 300px;
+    width: 60%;
+  }
+
+  #visit-us .hours {
+    font-size: 15px;
+  }
+
+  /* End Visit us section */
+
+
+  /* remote-rescue Section */
+
+  #remote-rescue .remote-rescue{
+  width: 90%;
+  }
+
+  #remote-rescue .rescue-info{
+
+  width: 90%;
+  }
+
+  #remote-rescue p{
+  font-size: 20px
+  }
+
+  #remote-rescue .remote-rescue span{
+  font-size: 20px
+  }
+
+  #remote-rescue input{
+  font-size: 15px
+  }
+  /* End remote-rescue  ection*/
+}
+
+
+
+
+
+
+@media  (min-width: 412px) and (max-width: 499px){
+  /* Hero section*/
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  #hero p {
+    font-size:20px;
+  }
+
+  #hero h2 {
+    font-size: 25px;
+  }
+
+  #hero ul li {
+    font-size:15px;
+  }
+  /* End hero section*/
+
+
+/* Services section  */
+
+#services .grid-container{
+    display: flex;
+  }
+
+  #services .box {
+
+    flex-basis: 100%;
+    height: 100px;
+
+  }
+  #services .box .icon img{
+    width: 25px;
+
+  }
+  #services .box h2{
+    font-size: 12px;
+
+  }
+
+
+/* End Services section  */
+}
+
+
+@media (min-width: 336px)  and (max-width: 411px){
+  /* Hero section*/
+  #hero h1 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size:18px;
+  }
+
+  #hero h2 {
+    font-size: 25px;
+  }
+
+  #hero ul li {
+    font-size:15px;
+  }
+  /* End hero section*/
+}
+
+@media (max-width: 336px){
+  /* start header */
+
+  #header #top-logo {
+    font-size: 12px;
+  }
+
+  #business-logo {
+    width: 60px;
+  }
+
+  .mediaLinks ul li {
+    font-size: 15px;
+  }
+  /* End header  */
+  /* Hero section*/
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size:15px;
+  }
+
+  #hero h2 {
+    font-size: 23px;
+  }
+
+  #hero ul li {
+    font-size:13px;
+  }
+  /* End hero section*/
+}
+
+
+
+
+
+@media (max-width: 303px) {
+  #header{
+    width: 303px;
+  }
+
+#hero{
+  width: 303px;
+}
+  #services{
+    width: 303px;
+  }
+
+  #about{
+    width: 301px;
+  }
+
+  #visit-us{
+    width: 303px;
+  }
+
+  #remote-rescue{
+    width: 303px;
+  }
+
+  footer{
+    width: 303px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* KetFrames */
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+
+/* added CSS */
+.red_1 {
+  animation: text_reveal_red ease forwards;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+}
+
+.red_2 {
+  animation: text_reveal_red ease forwards;
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+}
+
+@keyframes text_reveal_red {
+  100% {
+    color: crimson;
+  }
+}
+
+/* End KeyFrames */
